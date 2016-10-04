@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            My Profile Page
+        </title>
+    </head>
+    <style>
+        .canvas {
+            width: 100%;
+            height: 1000px;
+            background-color: darkgrey;
+            
+        }
+        .canvas2 {
+            width: 100%;
+            height: 525px;
+            background-color: dodgerblue ;
+        }
+       .canvas3 {
+            position: absolute;
+            top: 1500;
+            width: 100vw;
+            height: 200px;
+            background-color: deepskyblue;
+        }
+        .outter_banner {
+            height: 400px;
+            width: 100%;
+            position: absolute;
+            background-color: steelblue;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        
+        #text_box_top {
+            position: absolute;  
+            width: 400px;
+            height: 100px;
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            text-align: center;
+            left: 40%;
+            top: 175px;
+        }
+        .textboxx {
+            position: absolute;
+            width: 300px;
+            height: 75px;
+            text-align: center;
+            font-size: 20px;
+            left: 40px;
+        }
+        .prof_pic {
+            position: absolute;
+            background-image: url('http://placekitten.com/200/300');
+            background-repeat: no-repeat;
+            top: 175px;
+            left: 47%;
+        }
+        .username {
+            position: absolute;
+            left: 48%;
+            top: 630px;
+            font-size: 32px;
+        }
+        
+        .second_banner {
+            position: absolute;
+            height: 400px;
+            width: 100vw;
+            background-color: slategrey;
+            background-repeat: no-repeat;
+            background-position: center center;
+            top: 750px;
+            left: 0px;
+            border: 2px double black;
+        }
+        .portfolio1 {
+            position: absolute;
+            height: 300px;
+            width: 200px;
+            background-image: url("http://nextranks.com/data_images/main/cats/cats-04.jpg");
+            background-repeat: no-repeat;
+            background-position: -100px center;
+            top: 75px;
+            left: 50px;
+            border: 1px black solid;
+        }
+        
+        .portfolio2 {
+            position: absolute;
+            height: 300px;
+            width: 200px;
+            background-image: url("https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg");
+            background-repeat: no-repeat;
+            background-position: -95px -70px;
+            top: 75px;
+            left: 300px;
+            border: 1px black solid;
+        }
+        .portfolio3 {
+            position: absolute;
+            height: 300px;
+            width: 200px;
+            background-image: url("https://s-media-cache-ak0.pinimg.com/564x/77/40/e5/7740e5d0745f9661170ca81620bd548e.jpg");
+            background-repeat: no-repeat;
+            background-position: -170px -50px;
+            top: 75px;
+            left: 550px;
+            border: 1px black solid;
+        }
+        .portfolio4 {
+            position: absolute;
+            height: 300px;
+            width: 200px;
+            background-image: url("http://www.cutestpage.com/pictures/Fuzzy_Cute_Kitten.jpg");
+            background-repeat: no-repeat;
+            background-position: -365px -100px;
+            top: 75px;
+            left: 800px;
+            border: 1px black solid;
+        }
+        .portfolio5 {
+            position: absolute;
+            height: 300px;
+            width: 200px;
+            background-image: url("http://favim.com/orig/201106/12/black-and-white-cat-cute-kitten-photography-Favim.com-73766.jpg");
+            background-repeat: no-repeat;
+            background-position: -280px 0px;
+            background-size: 380%;
+            top: 75px;
+            left: 1050px;
+            border: 1px black solid;
+        }
+        .cat1 {
+            font-size: 25px;
+            position: absolute;
+            top: 5px;
+            left: 200px;
+            border: 1px double black;
+            padding: 3px;
+        }
+        .cat2 {
+            font-size: 25px;
+            position: absolute;
+            top: 5px;
+            left: 450px;
+            border: 1px double black;
+            padding: 3px;
+        }
+        .cat3 {
+            font-size: 25px;
+            position: absolute;
+            top: 5px;
+            left: 700px;
+            border: 1px double black;
+            padding: 3px;
+        }
+        .cat4 {
+            font-size: 25px;
+            position: absolute;
+            top: 5px;
+            left: 950px;
+            border: 1px double black;
+            padding: 3px;
+        }
+        .cat5 {
+            font-size: 25px;
+            position: absolute;
+            top: 5px;
+            left: 1160px;
+            border: 1px double black;
+            padding: 3px;
+        }
+        .cat6 {
+            position: absolute;
+            top: 1200px;
+            left: 50px;
+            border: 1px black solid;
+            background-image: url("http://www.ukvetsonline.co.uk/sites/default/files/230/kitten_on_fence_0.jpg");
+            background-repeat: no-repeat;    
+            width: 200px;
+            height: 300px;
+            background-size: 300%;
+            background-position: -180px -80px;
+        }
+        .new_cat_header {
+            position: absolute;
+            top: 1180px;
+            left: 300px;
+            font-size: 25px;
+        }
+        .jasper {
+            position: absolute;
+            top: 1200px;
+            left: 300px;
+            font-size: 45px;
+        }
+        .jasper_bio {
+            position: absolute;
+            top: 1300px;
+            left: 300px;
+            width: 600px;
+            height: 180px;
+            border: 2px  black;
+            font-size: 25px;
+            padding: 5px;
+            
+        }
+        .saybye {
+            position: absolute;
+            text-align: center center;
+            left: 40%;
+            top: 50px;
+            font-size: 25px;
+            
+        }
+        
+    </style>
+    <body>
+     <div class="canvas">   
+        <div class="outter_banner">
+        </div>  
+                
+        <div id="text_box_top">
+            <p class="textboxx"> Hello and Welcome to the Kitty Korner.  This is your one stop shop for adopting a kitten. :) </p>
+        </div>
+        
+        <div class="prof_pic">
+            <img class="prof_pic" src="http://placekitten.com/200/300"/>
+        </div>
+         
+        <p class="username">
+        Kitty Korner
+        </p>
+         
+        <div class="second_banner">
+            <p class="cat1">
+                Oscar</p>
+            <img class="portfolio1"/>
+            <p class="cat2">
+                Willis</p>
+            <img class="portfolio2"/>
+            <p class="cat3">
+                Othelo</p>
+            <img class="portfolio3"/>
+            <p class="cat4">
+                Olivia</p>
+            <img class="portfolio4"/>
+            <p class="cat5">
+                Sebastian</p>
+            <img class="portfolio5"/>
+         </div>
+    </div>
+        <div class="canvas2">
+            <img class="cat6"/>
+            <p class="new_cat_header">Meet The Newest edition to the line-up.</p>
+            <p class="jasper">Jasper</p>
+            <p class="jasper_bio">OH HAI! Are you this "light at the end of the tunnel" I keep hearing about? Are you my purr-ever home? Are those adoption PAPERS you're signing? And do they say "Jasper" on them? That's MY name! (scrunches eyes tight) Please don't let this be a dream...please don't let this be a dream...</p>
+        </div>
+    
+        <div class="canvas3">
+            <p class="saybye">Thanks for adopting!</p>
+    
+        </div>
+        
+    </body>
+
+</html>
